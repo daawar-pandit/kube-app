@@ -6,8 +6,8 @@ spec:
   selector:
     app: vprormq01
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 15672
-  type: LoadBalancer
+  - protocol: TCP
+    port: 15672
+    targetPort: 15672
+  type: ClusterIP
   
